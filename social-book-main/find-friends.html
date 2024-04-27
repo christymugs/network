@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network With Me</title>
+    <!-- ................CUSTOM CSS LINK................... -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .find {
+            position: relative;
+            justify-content: space-between;
+            display: flex;
+            padding: var(--card-padding);
+            border-radius: var(--card-border-radius);
+            flex-direction: column;
+            color: var(--color-white);
+            overflow: hidden;
+            width: 100%;
+            align-items: left;
+            background: var(--color-primary);
+            font-size: .7rem;
+        }
+
+        .find::before {
+            content: '';
+            height: 4rem;
+            width: 100%;
+            display: block;
+            background: linear-gradient(transparent, var(--color-primary));
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .find .profile-phots {
+            height: 2rem;
+            width: 2rem;
+            align-self: start;
+            border: 2px dotted var(--color-primary);
+        }
+
+        .find p {
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <h2 class="logo">
+                Network<span> With Me</span>
+            </h2>
+            <div class="search-bar">
+                <img src="icon/search.svg" class="icon2">
+                <input type="search" placeholder="search for creator...">
+            </div>
+            <div class="create">
+                <label for="creatPost" class="btn btn-primary">update</label>
+                <div class="profile-phots">
+                    <img src="img/profile-1.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container main-container">
+            <!--=======MAIN LEFT======== -->
+            <div class="main-left">
+                <div class="profile">
+                    <div class="profile-phots">
+                        <img src="img/profile-1.jpeg" alt="">
+                    </div>
+                    <div class="hendel">
+                        <h4>Sally Mae</h4>
+                        <p class="text-gry">@sallymae_</p>
+                    </div>
+                </div>
+
+                <!--.............. SIDEBAR.............. -->
+                <div class="side-bar">
+
+                    <a class="menu-item" href="index.html">
+                        <span><img src="icon/house-door.svg" class="icon1"></span>
+                        <h3>home</h3>
+                    </a>
+                    <a class="menu-item active" href="find-friends.html">
+                        <span><img src="icon/joystick.svg" class="icon1"></span>
+                        <h3>find friends</h3>
+                    </a>
+                    <a class="menu-item" id="message">
+                        <span> <small class="count">3</small> <img src="icon/chat-left-dots.svg" class="icon1"></span>
+                        <h3>message</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><img src="icon/bookmarks.svg" class="icon1"></span>
+                        <h3>bookmarks</h3>
+                    </a>
+                    <a class="menu-item ">
+
+                        <span><img src="icon/graph-up-arrow.svg" class="icon1"></span>
+                        <h3>analytics</h3>
+                    </a>
+                    <a class="menu-item " id="themeMenu">
+                        <span><img src="icon/palette.svg" class="icon1"></span>
+                        <h3>theme</h3>
+                    </a>
+                    <a class="menu-item g" href="settings.html">
+                        <span><img src="icon/gear.svg" class="icon1"></span>
+                        <h3>Settings</h3>
+                    </a>
+
+                    <label for="creatPost" class="btn btn-primary">create post</label>
+
+                </div>
+
+            </div>
+            <!-- =======MAIN MID======= -->
+            <div class="main-mid">
+
+                <!-- storys..start.. -->
+                <div class="find" style="text-align:center;">
+                    <h1>Find New Friends!</h1>
+                </div>
+
+
+                <!--..................feeds..start...............................-->
+                <div class="feeds">
+                    <ion-icon id="no" name="heart-dislike-outline" style="right: 10%; top: 200px;"></ion-icon>
+
+                    <div id="swiper" style="right: -25%;"></div>
+
+                    <ion-icon id="network" name="heart-outline" style="right:-80%; top: -550px;"></ion-icon>
+                    <!--..................feeds.end................................-->
+                </div>
+            </div>
+            <!-- =======MAIN RIGHT======= -->
+            <div class="main-right">
+                <div class="messages" id="message-box">
+                    <div class="message-heading">
+                        <h4>messages</h4><span><img src="icon/pencil-square.svg" class="icon1"></span>
+                    </div>
+                    <!-- searchbar -->
+                    <div class="search-bar">
+                        <span><img src="icon/search.svg" class="icon2"></span>
+                        <input type="search" placeholder="search message" class="message-search">
+                    </div>
+                    <!-- messagecategory -->
+                    <div class="category">
+                        <h6 class="active">friends</h6>
+                        <h6 class="">followers</h6>
+                        <h6 class="pr-requst">request(4)</h6>
+                    </div>
+                    <!-- messgae -->
+                    <div class="message">
+                        <div class="profile-phots">
+                            <div class="ac"></div>
+                            <img src="img/f3.png" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Klaus Mikealson</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-phots">
+                            <img src="img/m1.jpg" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Emma Stone</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-phots">
+                            <div class="ac"></div>
+                            <img src="img/m2.png" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Danielle White</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-phots">
+                            <img src="img/m3.jpg" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Nasir King</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="message ">
+                        <div class="profile-phots">
+                            <div class="ac"></div>
+                            <img src="img/m4.png" alt="">
+                        </div>
+                        <div class="messgae-body">
+                            <h5>Linda Roe</h5>
+                            <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--friend request-->
+                <div class="friend-requests">
+                    <h4>request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="img/f1.png" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>adam fight</h5>
+                                <p class="text-gry">10 mutual friend</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn btn" id="del">delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="img/s3.jpg" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>alex jnoy</h5>
+                                <p class="text-gry">10 mutual friend</p>
+                            </div>
+                        </div>
+
+                        <div class="action">
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn " id="del">delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="img/f3.png" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>eval milk</h5>
+                                <p class="text-gry">10 mutual friend</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn " id="del">delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-phots">
+                                <img src="img/f4.png" alt="">
+                            </div>
+                            <div class="request-body">
+                                <h5>dude putin</h5>
+                                <p class="text-gry">10 mutual friend</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="add">accept</button>
+                            <button class="btn " id="del">delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--................. THEME CUSTOMIZE.START............. -->
+    <div class="theme">
+        <div class="theme-box">
+            <h2>Choose your theme!</h2>
+            <p class="text-gry">manage your font, color, and background</p>
+            <button class="close-btn" onclick="toggleThemeMenu()">X</button> <!-- Close button -->
+
+            <!--........... FONT-SIZE........... -->
+            <div class="font-siz">
+                <div>
+                    <h6>aa</h6>
+                    <div class="choose-font-size">
+                        <span id="font1" class="font1"></span>
+                        <span id="font2" class="font2 active"></span>
+                        <span id="font3" class="font3"></span>
+                        <span id="font4" class="font4"></span>
+                        <span id="font5" class="font5"></span>
+                    </div>
+                    <h3>aa</h3>
+                </div>
+            </div>
+
+            <!--.................. COLOR................ -->
+            <div class="color">
+                <h3>color</h3>
+                <div class="choose-color">
+                    <span id="color1" class="color1"></span>
+                    <span id="color2" class="color2"></span>
+                    <span id="color3" class="color3 active"></span>
+                    <span id="color4" class="color4"></span>
+                    <span id="color5" class="color5"></span>
+                </div>
+            </div>
+
+            <!--.............BACKGROUND.............. -->
+            <div class="background">
+                <h3>backgorund</h3>
+                <div class="chosse-backgorund">
+                    <div class="bg1 active">
+                        <span></span>
+                        <h5 class="bg1">light</h5>
+                    </div>
+                    <div class="bg2">
+                        <span></span>
+                        <h5 class="bg2">dark</h5>
+                    </div>
+                    <div class="bg3">
+                        <span></span>
+                        <h5 class="bg3">black</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--.............THEME CUSTOMIZE.END...... -->
+    <!-- ................END MAINE SECTION......................... -->
+
+
+
+    <!-- .............CUSTOM JS LINK...................... -->
+    <script src="script.js"></script>
+    <script src="card.js"></script>
+    <script src="find.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
