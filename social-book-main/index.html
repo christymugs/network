@@ -8,6 +8,11 @@
     <title>Network With Me</title>
     <!-- ................CUSTOM CSS LINK................... -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .heart-red {
+            fill: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +24,7 @@
             </h2>
             <div class="search-bar">
                 <img src="icon/search.svg" class="icon2">
-                <input type="search" placeholder="search for creater...">
+                <input type="search" placeholder="search for creator...">
             </div>
             <div class="create">
                 <label for="creatPost" class="btn btn-primary">update</label>
@@ -55,11 +60,11 @@
                         <span><img src="icon/house-door.svg" class="icon1"></span>
                         <h3>home</h3>
                     </a>
-                    <a class="menu-item ">
+                    <a class="menu-item" href="find-friends.html">
                         <span><img src="icon/joystick.svg" class="icon1"></span>
-                        <h3>explore</h3>
+                        <h3>find friends</h3>
                     </a>
-                    <a class="menu-item" id="notifice">
+                    <a class="menu-item" id="notification">
                         <span> <small class="count">9</small> <img src="icon/bell.svg" class="icon1"></span>
                         <h3>notifications</h3>
                         <!-- ....................notification............................ -->
@@ -78,7 +83,7 @@
                                     <img src="img/p3.png" alt="">
                                 </div>
                                 <div class="notification-body">
-                                    <b>Micheal Fox</b> commented your post
+                                    <b>Micheal Macintosh</b> commented your post
                                     <small class="text-gry"> 4 minutes ago</small>
                                 </div>
                             </div>
@@ -87,7 +92,7 @@
                                     <img src="img/p4.png" alt="">
                                 </div>
                                 <div class="notification-body">
-                                    <b>Sam Green</b> liked your post
+                                    <b>Sam Johnson</b> liked your post
                                     <small class="text-gry"> 10 minutes ago</small>
                                 </div>
                             </div>
@@ -96,7 +101,7 @@
                                     <img src="img/p5.png" alt="">
                                 </div>
                                 <div class="notification-body">
-                                    <b>John</b> liked your post
+                                    <b>John Frost</b> liked your post
                                     <small class="text-gry"> 20 minutes ago</small>
                                 </div>
                             </div>
@@ -105,16 +110,16 @@
                                     <img src="img/profile-4.jpg" alt="">
                                 </div>
                                 <div class="notification-body">
-                                    <b>angla fox</b> reacted your post
+                                    <b>Billie Eilish</b> reacted your post
                                     <small class="text-gry"> 1 hour ago</small>
                                 </div>
                             </div>
                             <div class="NP">
                                 <div class="profile-phots">
-                                    <img src="img/profile-5.jpeg" alt="">
+                                    <img src="img/s4.jpg" alt="">
                                 </div>
                                 <div class="notification-body">
-                                    <b>lana</b> accepted your firend request
+                                    <b>Megan Samples</b> accepted your friend request
                                     <small class="text-gry">2 hour ago</small>
                                 </div>
                             </div>
@@ -123,7 +128,7 @@
                                     <img src="img/p7.png" alt="">
                                 </div>
                                 <div class="notification-body">
-                                    <b>mark newton</b> accepted your firend request
+                                    <b>mark cash</b> accepted your friend request
                                     <small class="text-gry"> 2 days ago</small>
                                 </div>
                             </div>
@@ -133,7 +138,7 @@
                         <span> <small class="count">3</small> <img src="icon/chat-left-dots.svg" class="icon1"></span>
                         <h3>message</h3>
                     </a>
-                    <a class="menu-item ">
+                    <a class="menu-item" id="bookmark">
                         <span><img src="icon/bookmarks.svg" class="icon1"></span>
                         <h3>bookmarks</h3>
                     </a>
@@ -146,9 +151,9 @@
                         <span><img src="icon/palette.svg" class="icon1"></span>
                         <h3>theme</h3>
                     </a>
-                    <a class="menu-item g">
+                    <a class="menu-item g" href="settings.html">
                         <span><img src="icon/gear.svg" class="icon1"></span>
-                        <h3>setings</h3>
+                        <h3>Settings</h3>
                     </a>
 
                     <label for="creatPost" class="btn btn-primary">create post</label>
@@ -171,31 +176,31 @@
                         <div class="profile-phots">
                             <img src="img/s2.jpg" alt="">
                         </div>
-                        <p>jami sia</p>
+                        <p>Katherine</p>
                     </div>
                     <div class="story">
                         <div class="profile-phots">
                             <img src="img/s3.jpg" alt="">
                         </div>
-                        <p>newton</p>
+                        <p>Jacob</p>
                     </div>
                     <div class="story">
                         <div class="profile-phots">
                             <img src="img/s4.jpg" alt="">
                         </div>
-                        <p>lana fox</p>
+                        <p>lana</p>
                     </div>
                     <div class="story">
                         <div class="profile-phots">
                             <img src="img/s5.jpg" alt="">
                         </div>
-                        <p>albart joj</p>
+                        <p>Sean</p>
                     </div>
                     <div class="story">
                         <div class="profile-phots">
                             <img src="img/s6.jpg" alt="">
                         </div>
-                        <p>David Alexander</p>
+                        <p>David</p>
                     </div>
 
 
@@ -236,7 +241,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -248,7 +254,7 @@
                             <span><img src="img/p2.jpg" alt=""></span>
                             <span><img src="img/p4.png" alt=""></span>
                             <span><img src="img/p5.png" alt=""></span>
-                            <p>like by <b>deniel rivar </b> and<b> 105 others pepoles</b></p>
+                            <p>liked by <b>Daniel Taiwo </b> and<b> 105 others</b></p>
                         </div>
                         <div class="caption">
                             <p><b>angela rose </b> Lorem, ipsum dolor sit amet consectetur. <span
@@ -276,7 +282,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -316,7 +323,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -356,7 +364,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -396,7 +405,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -436,7 +446,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -477,7 +488,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -517,7 +529,8 @@
                         </div>
                         <div class="action-buttons">
                             <div class="inter-action-button">
-                                <span><img src="icon/heart.svg" class="icon2"></span>
+                                <span onclick="toggleHeart(this)"><img src="icon/heart.svg" class="icon2"
+                                        id="heart1"></span>
                                 <span><img src="icon/chat-dots.svg" class="icon2"></span>
                                 <span><img src="icon/share.svg" class="icon2"></span>
                             </div>
@@ -544,7 +557,7 @@
             <div class="main-right">
                 <div class="messages" id="message-box">
                     <div class="message-heading">
-                        <h4>message</h4><span><img src="icon/pencil-square.svg" class="icon1"></span>
+                        <h4>messages</h4><span><img src="icon/pencil-square.svg" class="icon1"></span>
                     </div>
                     <!-- searchbar -->
                     <div class="search-bar">
@@ -553,8 +566,8 @@
                     </div>
                     <!-- messagecategory -->
                     <div class="category">
-                        <h6 class="active">firends</h6>
-                        <h6 class="">followrs</h6>
+                        <h6 class="active">friends</h6>
+                        <h6 class="">followers</h6>
                         <h6 class="pr-requst">request(4)</h6>
                     </div>
                     <!-- messgae -->
@@ -564,7 +577,7 @@
                             <img src="img/f3.png" alt="">
                         </div>
                         <div class="messgae-body">
-                            <h5>lion mesi</h5>
+                            <h5>Klaus Mikealson</h5>
                             <p class="text-gry">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
@@ -573,7 +586,7 @@
                             <img src="img/m1.jpg" alt="">
                         </div>
                         <div class="messgae-body">
-                            <h5>emaly wills</h5>
+                            <h5>Emma Stone</h5>
                             <p class="text-gry">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
@@ -583,7 +596,7 @@
                             <img src="img/m2.png" alt="">
                         </div>
                         <div class="messgae-body">
-                            <h5>dani liza</h5>
+                            <h5>Danielle White</h5>
                             <p class="text-gry">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
@@ -592,7 +605,7 @@
                             <img src="img/m3.jpg" alt="">
                         </div>
                         <div class="messgae-body">
-                            <h5>prince jhoo</h5>
+                            <h5>Nasir King</h5>
                             <p class="text-gry">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
@@ -602,13 +615,13 @@
                             <img src="img/m4.png" alt="">
                         </div>
                         <div class="messgae-body">
-                            <h5>daniel river</h5>
+                            <h5>Linda Roe</h5>
                             <p class="text-gry">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                 </div>
-                <!--firend request-->
-                <div class="firend-requests">
+                <!--friend request-->
+                <div class="friend-requests">
                     <h4>request</h4>
                     <div class="request">
                         <div class="info">
@@ -617,7 +630,7 @@
                             </div>
                             <div class="request-body">
                                 <h5>adam fight</h5>
-                                <p class="text-gry">10 mutual firend</p>
+                                <p class="text-gry">10 mutual friend</p>
                             </div>
                         </div>
                         <div class="action">
@@ -632,7 +645,7 @@
                             </div>
                             <div class="request-body">
                                 <h5>alex jnoy</h5>
-                                <p class="text-gry">10 mutual firend</p>
+                                <p class="text-gry">10 mutual friend</p>
                             </div>
                         </div>
 
@@ -648,7 +661,7 @@
                             </div>
                             <div class="request-body">
                                 <h5>eval milk</h5>
-                                <p class="text-gry">10 mutual firend</p>
+                                <p class="text-gry">10 mutual friend</p>
                             </div>
                         </div>
                         <div class="action">
@@ -663,7 +676,7 @@
                             </div>
                             <div class="request-body">
                                 <h5>dude putin</h5>
-                                <p class="text-gry">10 mutual firend</p>
+                                <p class="text-gry">10 mutual friend</p>
                             </div>
                         </div>
                         <div class="action">
@@ -678,21 +691,21 @@
 
     <!--................. THEME CUSTOMIZE.START............. -->
     <div class="theme">
-        <div class="card">
-            <h2>CUSTOMIZE yuor site</h2>
-            <p class="text-gry">manage your font, color, and backgroud</p>
-
+        <div class="theme-box">
+            <h2>Choose your theme!</h2>
+            <p class="text-gry">manage your font, color, and background</p>
+            <button class="close-btn" onclick="toggleThemeMenu()">X</button> <!-- Close button -->
 
             <!--........... FONT-SIZE........... -->
             <div class="font-siz">
                 <div>
                     <h6>aa</h6>
                     <div class="choose-font-size">
-                        <span class="font1"></span>
-                        <span class="font2 active"></span>
-                        <span class="font3"></span>
-                        <span class="font4"></span>
-                        <span class="font5"></span>
+                        <span id="font1" class="font1"></span>
+                        <span id="font2" class="font2 active"></span>
+                        <span id="font3" class="font3"></span>
+                        <span id="font4" class="font4"></span>
+                        <span id="font5" class="font5"></span>
                     </div>
                     <h3>aa</h3>
                 </div>
@@ -702,11 +715,11 @@
             <div class="color">
                 <h3>color</h3>
                 <div class="choose-color">
-                    <span class="color1"></span>
-                    <span class="color2"></span>
-                    <span class="color3 active"></span>
-                    <span class="color4"></span>
-                    <span class="color5"></span>
+                    <span id="color1" class="color1"></span>
+                    <span id="color2" class="color2"></span>
+                    <span id="color3" class="color3 active"></span>
+                    <span id="color4" class="color4"></span>
+                    <span id="color5" class="color5"></span>
                 </div>
             </div>
 
@@ -737,6 +750,12 @@
 
 
     <!-- .............CUSTOM JS LINK...................... -->
+    <script>
+        // JavaScript function to toggle the heart icon color
+        function toggleHeart(element) {
+            element.querySelector('icon').classList.toggle('heart-red');
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 
